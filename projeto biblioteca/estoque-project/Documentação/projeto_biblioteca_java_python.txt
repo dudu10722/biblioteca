@@ -1,0 +1,68 @@
+Boa noite, Eduardo!
+
+É totalmente possível criar um aplicativo desktop para biblioteca usando Java e Python no mesmo projeto, desde que a arquitetura seja bem definida.
+
+1) Misturar Java e Python no mesmo sistema
+Java e Python não se comunicam diretamente dentro do mesmo código. A integração ocorre por meio de intermediários, como:
+- API
+- Banco de dados
+- Arquivos
+- Serviços locais
+
+2) Visão geral do sistema da biblioteca
+Arquitetura em camadas:
+
+Interface Desktop (Java)
+↓
+Regras de Negócio (Python)
+↓
+Banco de Dados (MySQL, PostgreSQL ou SQLite)
+
+3) Divisão de responsabilidades
+
+Parte em Java:
+- Interface gráfica
+- Telas
+- Botões
+- Formulários
+Tecnologias comuns: JavaFX ou Swing
+
+Parte em Python:
+- Regras de negócio
+- Validações
+- Controle de empréstimos, devoluções e vendas
+- Comunicação com banco de dados
+Tecnologias comuns: Flask ou FastAPI, SQLAlchemy
+
+4) Como Java e Python se conectam
+
+Opção 1 – API REST (mais profissional):
+- Python roda um servidor local
+- Java faz requisições HTTP
+- Comunicação via JSON
+
+Opção 2 – Banco de dados compartilhado:
+- Java e Python acessam o mesmo banco
+- Funciona, mas é menos comum hoje
+
+Opção 3 – Arquivos:
+- Comunicação via CSV ou JSON
+- Uso apenas didático
+
+5) Trabalho em equipe
+Duas pessoas podem programar separadamente usando:
+- Git/GitHub
+- Contratos de comunicação bem definidos (JSON)
+
+6) Projeto para portfólio
+Projeto muito forte para portfólio se incluir:
+- Documentação
+- Explicação da arquitetura
+- Uso de API REST
+- Possibilidade de análises futuras (relatórios, dashboards)
+
+7) Próximos passos
+- Definir arquitetura oficial
+- Dividir tarefas entre Java e Python
+- Criar estrutura de pastas
+- Planejar roadmap do projeto
